@@ -1,19 +1,17 @@
-# 🎈 Blank app template
+# Incident Unblocker (Hackathon Demo)
 
-A simple Streamlit app template for you to modify!
+A lightweight internal console to track unresolved incidents, resolve ownership gaps, and generate Teams alerts (simulation) with an audit trail.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+## Run in GitHub Codespaces
+1. Push this repo to GitHub
+2. Open → Code → Codespaces → Create codespace
+3. Run:
+```bash
+streamlit run app.py --server.port 8501 --server.address 0.0.0.0
+```
+4. Open the forwarded port 8501.
 
-### How to run it on your own machine
-
-1. Install the requirements
-
-   ```
-   $ pip install -r requirements.txt
-   ```
-
-2. Run the app
-
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+## Demo flow (2–3 minutes)
+1) Incident Console → pick Sev1/Sev2 unresolved → Send Teams Alert → show audit log  
+2) Ownership Directory → search asset → show owner card + runbook  
+3) Friction Insights (optional) → show systemic delays
